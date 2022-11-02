@@ -1,0 +1,13 @@
+top:
+    - class_name: user-map
+      id_name: user-map
+      name: 当前天气
+      icon: fas fa-heartbeat
+      order: 
+      html: '<iframe allowtransparency="true" frameborder="0" width="195" height="96" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=1&t=0&v=0&d=1&bd=0&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=57516&w=195&h=96&align=center"></iframe>'
+    - class_name: userip
+      id_name: userip
+      name: 来访者欢迎你!
+      icon: fa fa-mobile
+      order: 
+      html: '访客信息获取中.....'

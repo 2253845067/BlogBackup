@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo建立一个独立的HTML页面 | 一只没有梦想的咸鱼</title><meta name="keywords" content="Hexo"><meta name="author" content="与亓"><meta name="copyright" content="与亓"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hexo建立一个独立的HTML页面，跳过渲染配置，保留原汁原味">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo建立一个独立的HTML页面">
+<meta property="og:url" content="https://yuqi.fun/2022/06/10/Hexo%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E7%8B%AC%E7%AB%8B%E7%9A%84HTML%E9%A1%B5%E9%9D%A2/index.html">
+<meta property="og:site_name" content="一只没有梦想的咸鱼">
+<meta property="og:description" content="Hexo建立一个独立的HTML页面，跳过渲染配置，保留原汁原味">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/OIP.jpg">
+<meta property="article:published_time" content="2022-06-09T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-06-09T16:00:00.000Z">
+<meta property="article:author" content="与亓">
+<meta property="article:tag" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/OIP.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yuqi.fun/2022/06/10/Hexo%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E7%8B%AC%E7%AB%8B%E7%9A%84HTML%E9%A1%B5%E9%9D%A2/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo建立一个独立的HTML页面',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-06-10 00:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/modify.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/R.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-images"></i><span> 图库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/galleryGroup/"><i class="fa-fw fas fa-images"></i><span> 图库总览</span></a></li><li><a class="site-page child" href="/galleryGroup/bwg/"><i class="fa-fw fas fa-images"></i><span> 重庆中国三峡博物馆</span></a></li><li><a class="site-page child" href="/galleryGroup/hygy/"><i class="fa-fw fas fa-images"></i><span> 重庆汉海海洋公园</span></a></li><li><a class="site-page child" href="/galleryGroup/yby/"><i class="fa-fw fas fa-images"></i><span> 重庆园博园</span></a></li><li><a class="site-page child" href="/galleryGroup/hyd/"><i class="fa-fw fas fa-images"></i><span> 重庆洪崖洞</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/OIP.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">一只没有梦想的咸鱼</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-images"></i><span> 图库</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/galleryGroup/"><i class="fa-fw fas fa-images"></i><span> 图库总览</span></a></li><li><a class="site-page child" href="/galleryGroup/bwg/"><i class="fa-fw fas fa-images"></i><span> 重庆中国三峡博物馆</span></a></li><li><a class="site-page child" href="/galleryGroup/hygy/"><i class="fa-fw fas fa-images"></i><span> 重庆汉海海洋公园</span></a></li><li><a class="site-page child" href="/galleryGroup/yby/"><i class="fa-fw fas fa-images"></i><span> 重庆园博园</span></a></li><li><a class="site-page child" href="/galleryGroup/hyd/"><i class="fa-fw fas fa-images"></i><span> 重庆洪崖洞</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo建立一个独立的HTML页面</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-09T16:00:00.000Z" title="发表于 2022-06-10 00:00:00">2022-06-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-06-09T16:00:00.000Z" title="更新于 2022-06-10 00:00:00">2022-06-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo建立一个独立的HTML页面"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url('https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/OIP.jpg');"></div><article class="post-content" id="article-container"><p>Hexo 是一个轻量、快速，简单和强大的博客框架，当我们需要发布博文的时候，只需要将写好的文章（MarkDown文件）放入本地的 <code>\source\_posts</code> 文件夹，然后再推送上去就行了，原理就是当我们在执行 <code>hexo g</code> 命令时，<code>.md</code> 文件就会被转化成 HTML 文件，但是有时候我们需要新建一个独立的页面，这个页面不使用主题的渲染，具有自己独立的样式，可以放一些自己的作品，相册什么的，以下就介绍这种独立页面的实现方法。</p>
+<h1 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h1><p>使用 Hexo 提供的跳过渲染配置，在博客根目录的配置文件 <code>_config.yml</code> 里找到 <code>skip_render</code> 关键字，在后面添加想要跳过渲染的页面，比如我们创建 <code>\source\about\index.html</code>， 配置文件填写：<code>skip_render: about\**</code>，那么就表示 <code>\source\about</code> 里所有的文件将跳过渲染，里面的文件将会被直接复制到 public 文件夹，此时就会得到一个独立的 about 页面；官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration">https://hexo.io/docs/configuration</a></p>
+<h1 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h1><p>在文章头部的 Front-matter 里添加配置 <code>layout: false</code> 来跳过渲染配置，比如我们要使 about 页面跳过渲染，创建 <code>\source\about\index.md</code>，将这个页面的相关 HTML 代码写进<code>.md</code>文件并保存，然后在 <code>index.md</code> 的头部写入：</p>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="section">layout: false</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line">{% raw %}</span><br><span class="line">xxxxxxxxxxxxx</span><br><span class="line">xx HTML代码 xx</span><br><span class="line">xxxxxxxxxxxxx</span><br><span class="line">{% endraw %}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>PS：Front-matter 是 <code>.md</code> 文件最上方以 — 分隔的区域，用于指定个别文件的变量，官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/docs/front-matter">https://hexo.io/docs/front-matter</a></p>
+<figure class="highlight markdown"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.md文件中的 HTML 代码要用 {% raw %} 和 {% endraw %} 包起来，使其能正确编译里面的代码。</span><br></pre></td></tr></tbody></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://yuqi.fun">与亓</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://yuqi.fun/2022/06/10/Hexo%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E7%8B%AC%E7%AB%8B%E7%9A%84HTML%E9%A1%B5%E9%9D%A2/">https://yuqi.fun/2022/06/10/Hexo%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AA%E7%8B%AC%E7%AB%8B%E7%9A%84HTML%E9%A1%B5%E9%9D%A2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yuqi.fun" target="_blank">一只没有梦想的咸鱼</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a></div><div class="post_share"><div class="social-share" data-image="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/OIP.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="/pluginsSrc/butterfly-extsrc/ShareJS/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="/pluginsSrc/butterfly-extsrc/ShareJS/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/06/17/Butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"><img class="prev-cover" src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/953ef369-0f53-417b-b8a5-0d7551ee8bda.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Butterfly主题美化</div></div></a></div><div class="next-post pull-right"><a href="/2022/06/08/HTML%E6%80%BB%E5%A4%8D%E4%B9%A0/"><img class="next-cover" src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/u=3989386929,2695180838&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTML总复习</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/06/17/Butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" title="Butterfly主题美化"><img class="cover" src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/953ef369-0f53-417b-b8a5-0d7551ee8bda.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-17</div><div class="title">Butterfly主题美化</div></div></a></div><div><a href="/2022/06/18/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="Hexo博客部署到云服务器"><img class="cover" src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/a90d64cc-575e-4116-ad92-2c26433c94d5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-18</div><div class="title">Hexo博客部署到云服务器</div></div></a></div><div><a href="/2022/06/07/Hexo%E6%90%AD%E5%BB%BA/" title="Hexo搭建"><img class="cover" src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/5O1day2nriDzjSu.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-07</div><div class="title">Hexo搭建</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/R.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info__name">与亓</div><div class="author-info__description">blog</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/2253845067?tab=repositories"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/2253845067?tab=repositories" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2253845067@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">下面是与亓的个人网页 <br> <a class="button--animated" href="https://yuqi.fun/" rel="external nofollow noreferrer" target="_blank">与亓的blog 👍</a> <br> <a class="button--animated" href="https://pan.yuqi.fun/" rel="external nofollow noreferrer" target="_blank">与亓的云盘 👍</a> <br> 联系我： <br> <a class="button--animated" href="https://qm.qq.com/cgi-bin/qm/qr?k=yiTUJjlpnaIOb26V4HF_MajWQqhqMa57&amp;noverify=0" rel="external nofollow noreferrer" target="_blank">点击添加与亓的QQ账号 👍</a></div></div><div class="card-widget user-map" id="user-map"><div class="item-headline"><i class="fas fa-heartbeat"></i><span>当前天气</span></div><div class="item-content"><iframe allowtransparency="true" frameborder="0" width="195" height="96" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&amp;z=1&amp;t=0&amp;v=0&amp;d=1&amp;bd=0&amp;k=000000&amp;f=&amp;ltf=009944&amp;htf=cc0000&amp;q=1&amp;e=1&amp;a=1&amp;c=57516&amp;w=195&amp;h=96&amp;align=center"></iframe></div></div><div class="card-widget userip" id="userip"><div class="item-headline"><i class="fa fa-mobile"></i><span>来访者欢迎你!</span></div><div class="item-content">访客信息获取中.....</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">方法一：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%B3%952"><span class="toc-number">2.</span> <span class="toc-text">方法2</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/08/13/%E8%81%94%E6%83%B3%E5%87%BA%E5%8E%82%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/" title="联想出厂系统下载工具"><img src="https://yuqi1.oss-cn-chengdu.aliyuncs.com/img/202208132039337.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="联想出厂系统下载工具"></a><div class="content"><a class="title" href="/2022/08/13/%E8%81%94%E6%83%B3%E5%87%BA%E5%8E%82%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/" title="联想出厂系统下载工具">联想出厂系统下载工具</a><time datetime="2022-08-12T16:00:00.000Z" title="发表于 2022-08-13 00:00:00">2022-08-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/23/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Av2%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="兰空图床v2安装教程"><img src="https://tc.yuqi.fun/img/62b3e2b6e577f.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="兰空图床v2安装教程"></a><div class="content"><a class="title" href="/2022/06/23/%E5%85%B0%E7%A9%BA%E5%9B%BE%E5%BA%8Av2%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="兰空图床v2安装教程">兰空图床v2安装教程</a><time datetime="2022-06-22T16:00:00.000Z" title="发表于 2022-06-23 00:00:00">2022-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/06/23/%E5%8E%9F%E7%A5%9E%E8%BE%85%E5%8A%A9%EF%BC%88%E6%90%AC%E8%BF%90%EF%BC%89/" title="原神辅助（搬运）"><img src="http://lsky.yuqi.fun/i/2022/06/23/62b4096f0f8b2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="原神辅助（搬运）"></a><div class="content"><a class="title" href="/2022/06/23/%E5%8E%9F%E7%A5%9E%E8%BE%85%E5%8A%A9%EF%BC%88%E6%90%AC%E8%BF%90%EF%BC%89/" title="原神辅助（搬运）">原神辅助（搬运）</a><time datetime="2022-06-22T16:00:00.000Z" title="发表于 2022-06-23 00:00:00">2022-06-23</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">©2020 - 2022 By 与亓</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="icp"><a target="_blank" rel="noopener" href="http://www.beian.miit.gov.cn/"><span>渝ICP备2022006915号</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script src="/js/jquery.min.js"></script><script charset="utf-8" type="text/javascript" src="/js/getuserip.js"></script><script id="click-heart" src="/pluginsSrc/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
